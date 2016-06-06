@@ -501,8 +501,10 @@
 		D442397E1AF17F7600559D96 /* ORKImageCaptureStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D442397C1AF17F7600559D96 /* ORKImageCaptureStepViewController.m */; };
 		D458520A1AF6CCFA00A2DE13 /* ORKImageCaptureCameraPreviewView.h in Headers */ = {isa = PBXBuildFile; fileRef = D45852081AF6CCFA00A2DE13 /* ORKImageCaptureCameraPreviewView.h */; };
 		D458520B1AF6CCFA00A2DE13 /* ORKImageCaptureCameraPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = D45852091AF6CCFA00A2DE13 /* ORKImageCaptureCameraPreviewView.m */; };
-		F63DB0BD1CFF68F00014AF0B /* ISBXORKWebviewStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63DB0BB1CFF68F00014AF0B /* ISBXORKWebviewStep.swift */; };
-		F63DB0BE1CFF68F00014AF0B /* ISBXORKWebviewStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63DB0BC1CFF68F00014AF0B /* ISBXORKWebviewStepViewController.swift */; };
+		F63DB0C51CFF727B0014AF0B /* ORKWebviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F63DB0C41CFF727B0014AF0B /* ORKWebviewViewController.m */; };
+		F63DB0C71CFF78060014AF0B /* ORKWebviewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F63DB0C61CFF72C10014AF0B /* ORKWebviewViewController.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F63DB0C91CFF7D340014AF0B /* ORKWebviewStep.m in Sources */ = {isa = PBXBuildFile; fileRef = F63DB0C81CFF7D340014AF0B /* ORKWebviewStep.m */; };
+		F63DB0CB1CFF7F510014AF0B /* ORKWebviewStep.h in Headers */ = {isa = PBXBuildFile; fileRef = F63DB0CA1CFF7D430014AF0B /* ORKWebviewStep.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA7A9D2B1B082688005A2BEA /* ORKConsentDocumentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7A9D2A1B082688005A2BEA /* ORKConsentDocumentTests.m */; };
 		FA7A9D2F1B083DD3005A2BEA /* ORKConsentSectionFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = FA7A9D2D1B083DD3005A2BEA /* ORKConsentSectionFormatter.h */; };
 		FA7A9D301B083DD3005A2BEA /* ORKConsentSectionFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7A9D2E1B083DD3005A2BEA /* ORKConsentSectionFormatter.m */; };
@@ -1054,8 +1056,10 @@
 		D442397C1AF17F7600559D96 /* ORKImageCaptureStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORKImageCaptureStepViewController.m; sourceTree = "<group>"; };
 		D45852081AF6CCFA00A2DE13 /* ORKImageCaptureCameraPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORKImageCaptureCameraPreviewView.h; sourceTree = "<group>"; };
 		D45852091AF6CCFA00A2DE13 /* ORKImageCaptureCameraPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORKImageCaptureCameraPreviewView.m; sourceTree = "<group>"; };
-		F63DB0BB1CFF68F00014AF0B /* ISBXORKWebviewStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISBXORKWebviewStep.swift; sourceTree = "<group>"; };
-		F63DB0BC1CFF68F00014AF0B /* ISBXORKWebviewStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISBXORKWebviewStepViewController.swift; sourceTree = "<group>"; };
+		F63DB0C41CFF727B0014AF0B /* ORKWebviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORKWebviewViewController.m; sourceTree = "<group>"; };
+		F63DB0C61CFF72C10014AF0B /* ORKWebviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORKWebviewViewController.h; sourceTree = "<group>"; };
+		F63DB0C81CFF7D340014AF0B /* ORKWebviewStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORKWebviewStep.m; sourceTree = "<group>"; };
+		F63DB0CA1CFF7D430014AF0B /* ORKWebviewStep.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORKWebviewStep.h; sourceTree = "<group>"; };
 		FA7A9D2A1B082688005A2BEA /* ORKConsentDocumentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORKConsentDocumentTests.m; sourceTree = "<group>"; };
 		FA7A9D2D1B083DD3005A2BEA /* ORKConsentSectionFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORKConsentSectionFormatter.h; sourceTree = "<group>"; };
 		FA7A9D2E1B083DD3005A2BEA /* ORKConsentSectionFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORKConsentSectionFormatter.m; sourceTree = "<group>"; };
@@ -2215,8 +2219,10 @@
 		F63DB0B61CFF67F20014AF0B /* Webview Step */ = {
 			isa = PBXGroup;
 			children = (
-				F63DB0BB1CFF68F00014AF0B /* ISBXORKWebviewStep.swift */,
-				F63DB0BC1CFF68F00014AF0B /* ISBXORKWebviewStepViewController.swift */,
+				F63DB0C41CFF727B0014AF0B /* ORKWebviewViewController.m */,
+				F63DB0C61CFF72C10014AF0B /* ORKWebviewViewController.h */,
+				F63DB0C81CFF7D340014AF0B /* ORKWebviewStep.m */,
+				F63DB0CA1CFF7D430014AF0B /* ORKWebviewStep.h */,
 			);
 			name = "Webview Step";
 			sourceTree = "<group>";
@@ -2250,6 +2256,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F63DB0CB1CFF7F510014AF0B /* ORKWebviewStep.h in Headers */,
 				244EFAD21BCEFD83001850D9 /* ORKAnswerFormat_Private.h in Headers */,
 				BCA5C0351AEC05F20092AC8D /* ORKStepNavigationRule.h in Headers */,
 				BC13CE391B0660220044153C /* ORKNavigableOrderedTask.h in Headers */,
@@ -2294,6 +2301,7 @@
 				25ECC0A31AFBDD2700F3D63B /* ORKReactionTimeStimulusView.h in Headers */,
 				106FF2AA1B690FD7004EACF2 /* ORKHolePegTestPlacePegView.h in Headers */,
 				86C40D701A8D7C5C00081FAC /* ORKRoundTappingButton.h in Headers */,
+				F63DB0C71CFF78060014AF0B /* ORKWebviewViewController.h in Headers */,
 				BCB6E6501B7D533B000D5B34 /* ORKCenteredCollectionViewLayout.h in Headers */,
 				CBD34A561BB1FB9000F204EA /* ORKLocationSelectionView.h in Headers */,
 				865EA1621AB8DF750037C68E /* ORKDateTimePicker.h in Headers */,
@@ -2853,6 +2861,7 @@
 				86C40C641A8D7C5C00081FAC /* CLLocation+ORKJSONDictionary.m in Sources */,
 				86C40D041A8D7C5C00081FAC /* ORKContinueButton.m in Sources */,
 				24A4DA151B8D1115009C797A /* ORKPasscodeStep.m in Sources */,
+				F63DB0C51CFF727B0014AF0B /* ORKWebviewViewController.m in Sources */,
 				86C40DEC1A8D7C5C00081FAC /* UIBarButtonItem+ORKBarButtonItem.m in Sources */,
 				106FF2AF1B6FACA8004EACF2 /* ORKDirectionView.m in Sources */,
 				86C40CAA1A8D7C5C00081FAC /* ORKPedometerRecorder.m in Sources */,
@@ -2878,7 +2887,6 @@
 				86C40CEC1A8D7C5C00081FAC /* ORKAnswerTextField.m in Sources */,
 				86C40C441A8D7C5C00081FAC /* ORKSpatialSpanMemoryStep.m in Sources */,
 				BCB080A11B83EFB900A3F400 /* ORKStepNavigationRule.swift in Sources */,
-				F63DB0BE1CFF68F00014AF0B /* ISBXORKWebviewStepViewController.swift in Sources */,
 				24898B0E1B7186C000B0E7E7 /* ORKScaleRangeImageView.m in Sources */,
 				CB16A6F11BB0D0960043CDD8 /* ORKWaitStep.m in Sources */,
 				86C40DD81A8D7C5C00081FAC /* ORKUnitLabel.m in Sources */,
@@ -2898,6 +2906,7 @@
 				86C40C7C1A8D7C5C00081FAC /* ORKAccelerometerRecorder.m in Sources */,
 				86C40C861A8D7C5C00081FAC /* ORKActiveStepTimer.m in Sources */,
 				242C9E061BBDFDAC0088B7F4 /* ORKVerificationStep.m in Sources */,
+				F63DB0C91CFF7D340014AF0B /* ORKWebviewStep.m in Sources */,
 				B11C549B1A9EEF8800265E61 /* ORKConsentSharingStep.m in Sources */,
 				86C40DE01A8D7C5C00081FAC /* ORKVerticalContainerView.m in Sources */,
 				BCD192EC1B81245500FCC08A /* ORKPieChartTitleTextView.m in Sources */,
@@ -2912,7 +2921,6 @@
 				FA7A9D301B083DD3005A2BEA /* ORKConsentSectionFormatter.m in Sources */,
 				86C40D2A1A8D7C5C00081FAC /* ORKFormTextView.m in Sources */,
 				242C9E0E1BBE03F90088B7F4 /* ORKVerificationStepViewController.m in Sources */,
-				F63DB0BD1CFF68F00014AF0B /* ISBXORKWebviewStep.swift in Sources */,
 				86C40DD41A8D7C5C00081FAC /* ORKTextButton.m in Sources */,
 				86C40C981A8D7C5C00081FAC /* ORKDataLogger.m in Sources */,
 				BCB6E66D1B7D537B000D5B34 /* ORKRangedPoint.m in Sources */,
