@@ -6,8 +6,10 @@
 //  Copyright © 2016 researchkit.org. All rights reserved.
 //
 
-#ifndef ORKWebviewStep_h
-#define ORKWebviewStep_h
+#import <ResearchKit/ResearchKit.h>
 
+@interface ORKWebviewStep : ORKStep
 
-#endif /* ORKWebviewStep_h */
+@property (nonatomic, copy, nullable) NSString *htmlText;
+@property (nonatomic, copy, nullable) NSURL *htmlUrl;
+@end

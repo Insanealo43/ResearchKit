@@ -6,8 +6,9 @@
 //  Copyright © 2016 researchkit.org. All rights reserved.
 //
 
-#ifndef ORKWebviewController_h
-#define ORKWebviewController_h
+#import <ResearchKit/ResearchKit.h>
 
+ORK_CLASS_AVAILABLE
+@interface ORKWebviewViewController : ORKStepViewController
 
-#endif /* ORKWebviewController_h */
+@end
