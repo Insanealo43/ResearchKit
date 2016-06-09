@@ -101,4 +101,12 @@
     [super decodeRestorableStateWithCoder:coder];
 }
 
+- (void)updateViewConstraints {
+    [super updateViewConstraints];
+    
+    CGRect frame = self.containerView.stepView.frame;
+    frame.size = CGSizeMake(frame.size.width, self.view.bounds.size.height - self.containerView.continueSkipContainer.frame.size.height);
+    [self.containerView.stepView setFrame:frame];
+}
+
 @end
