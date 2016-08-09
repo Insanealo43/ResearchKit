@@ -459,6 +459,11 @@ ORK_CLASS_AVAILABLE
  */
 @property (nonatomic, readonly) UINavigationBar *navigationBar;
 
+/**
+ ISBX - ALV Edits
+ */
+@property (nonatomic, readonly) UIPageViewController *pageController;
+
 @end
 
 NS_ASSUME_NONNULL_END

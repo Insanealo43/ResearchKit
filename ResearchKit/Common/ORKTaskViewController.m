@@ -1417,4 +1417,9 @@ static NSString *const _ORKPresentedDate = @"presentedDate";
     return self.childNavigationController.navigationBar;
 }
 
+#pragma mark - ALV Edits
+- (UIPageViewController *)pageController {
+    return self.pageViewController;
+}
+
 @end

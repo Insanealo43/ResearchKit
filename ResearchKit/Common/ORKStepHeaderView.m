@@ -116,6 +116,14 @@
         [_learnMoreButton setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisVertical];
         [_learnMoreButton setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisVertical];
         
+        // ISBX - ALV Edits
+        UIColor *textColor = [UIColor colorWithRed:51.0/255 green:70.0/255 blue:80.0/255 alpha:1.0];
+        [_captionLabel setTextColor:textColor];
+        [_instructionLabel setTextColor:textColor];
+        
+        [_captionLabel setFont:[UIFont fontWithName:@"Lato-Light" size:40]];
+        [_instructionLabel setFont:[UIFont fontWithName:@"Lato-Light" size:20]];
+        
 #ifdef LAYOUT_DEBUG
         _captionLabel.backgroundColor = [[UIColor yellowColor] colorWithAlphaComponent:0.2];
         _captionLabel.layer.borderColor = [UIColor yellowColor].CGColor;
