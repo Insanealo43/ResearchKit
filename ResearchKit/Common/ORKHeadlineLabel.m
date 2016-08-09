@@ -43,7 +43,8 @@
     CGFloat fontSize = [[descriptor objectForKey: UIFontDescriptorSizeAttribute] doubleValue] - defaultHeadlineSize + ORKGetMetricForWindow(surveyMode ? ORKScreenMetricFontSizeSurveyHeadline : ORKScreenMetricFontSizeHeadline, nil);
     CGFloat maxFontSize = ORKGetMetricForWindow(surveyMode?ORKScreenMetricMaxFontSizeSurveyHeadline:ORKScreenMetricMaxFontSizeHeadline, nil);
     
-    return ORKLightFontWithSize(MIN(maxFontSize, fontSize));
+    return [UIFont fontWithName:@"Lato-Light" size:40];
+    //return ORKLightFontWithSize(MIN(maxFontSize, fontSize));
 }
 
 + (UIFont *)defaultFont {
